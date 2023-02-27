@@ -1,6 +1,8 @@
 .cover { background-size: cover!important; }
 .contain { background-size: contain!important; }
 
+.bg-30 { background-size: 33.38% 100%;}
+
 @media (--breakpoint-not-small) {
   .cover-ns { background-size: cover!important; }
   .contain-ns { background-size: contain!important; }

@@ -1,6 +1,13 @@
-// JS Goes here - ES6 supported
-
 import "./css/main.scss";
 
-// Say hello
-console.log("🦊 Hello! Edit me in src/index.js");
+let first_carousel_slide = document.querySelector(".carousel-slide");
+if(first_carousel_slide)
+{
+    document.querySelectorAll(".carousel-radio").forEach((item, index) =>
+    {
+        item.addEventListener("change", () =>
+        {
+            first_carousel_slide.style.marginLeft = `${index * -100}%`;
+        });
+    });
+}

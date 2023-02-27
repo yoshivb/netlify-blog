@@ -1,3 +1,10 @@
+.hide-accessible {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
 .aspect-ratio {
   height: 0;
   position: relative;
