@@ -3,7 +3,7 @@ import React from "react";
 export default class Jumbotron extends React.Component {
   render() {
     const {image, title, subtitle} = this.props;
-    return <div class="pv5 pv6-l ph3 bg-center cover" style={{backgroundImage: image && `url('${image}')`}}>
+    return <div class="pv5 pv6-l ph3 bg-center cover" style={{backgroundImage: `url('${image}')`}}>
     <div class="mw7 center ph3">
       <div class="db mb3">
         <div class="mw7 relative bg-fix-primary mb3">
