@@ -23,11 +23,11 @@ export default class HomePreview extends React.Component {
             <div class="ph1-ns w-100 flex">
               <a class="no-underline pa3 bg-grey-1 br1 mb2 raise flex w-100">
                 <div class="flex flex-column w-70">
-                  <h2 class="f3 b lh-title mb1 primary">{ latest_project.Title }</h2>
-                  <p class="mb0">{ latest_project.Description }</p>
+                  <h2 class="f3 b lh-title mb1 primary">{ latest_project.getIn(["data", "title"]) }</h2>
+                  <p class="mb0">{ latest_project.getIn(["data", "description"]) }</p>
                 </div>
                 <div class="w-30">
-                  <img src={ latest_project.Params.Image }/>
+                  <img src={ latest_project.getIn(["data", "image"]) }/>
                 </div>
               </a>
             </div>
@@ -44,11 +44,11 @@ export default class HomePreview extends React.Component {
             <div class="ph1-ns w-100 flex">
               <a class="no-underline pa3 bg-grey-1 br1 mb2 raise flex w-100">
                 <div class="flex flex-column w-70">
-                  <h2 class="f3 b lh-title mb1 primary">{ latest_post.Title }</h2>
-                  <p class="mb0">{ latest_post.Description }</p>
+                  <h2 class="f3 b lh-title mb1 primary">{ latest_post.getIn(["data", "title"]) }</h2>
+                  <p class="mb0">{ latest_post.getIn(["data", "description"]) }</p>
                 </div>
                 <div class="w-30">
-                  <img src={ latest_post.Params.Image }/>
+                  <img src={ latest_post.Params.getIn(["data", "image"]) }/>
                 </div>
               </a>
             </div>
